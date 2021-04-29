@@ -38,13 +38,13 @@ namespace HW_6._13
             {
                 lblHeadCount.Text = (int.Parse(lblHeadCount.Text) + 1).ToString();
                 txt = "HEAD";
-                pictureBox.Image = new System.Drawing.Bitmap(Properties.Resources.head);
+                pictureBox.Image = new Bitmap(Properties.Resources.head);
             }
             else
             {
                 lblTailCount.Text = (int.Parse(lblTailCount.Text) + 1).ToString();
                 txt = "TAIL";
-                pictureBox.Image = new System.Drawing.Bitmap(Properties.Resources.tail);
+                pictureBox.Image = new Bitmap(Properties.Resources.tail);
 
             }
             lblText.Text = txt;

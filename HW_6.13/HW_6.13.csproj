@@ -83,7 +83,9 @@
   <ItemGroup>
     <Content Include="Assets\head.png" />
     <Content Include="Assets\tail.png" />
-    <None Include="Resources\head.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
