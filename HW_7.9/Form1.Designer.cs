@@ -58,7 +58,7 @@ namespace HW_7._9
             this.tblGeneral.RowCount = 2;
             this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tblGeneral.Size = new System.Drawing.Size(760, 417);
+            this.tblGeneral.Size = new System.Drawing.Size(859, 512);
             this.tblGeneral.TabIndex = 2;
             // 
             // tlpUpper
@@ -79,8 +79,8 @@ namespace HW_7._9
             this.tlpUpper.Name = "tlpUpper";
             this.tlpUpper.RowCount = 1;
             this.tlpUpper.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpUpper.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tlpUpper.Size = new System.Drawing.Size(754, 77);
+            this.tlpUpper.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tlpUpper.Size = new System.Drawing.Size(853, 96);
             this.tlpUpper.TabIndex = 1;
             // 
             // lblExplanation
@@ -88,13 +88,13 @@ namespace HW_7._9
             this.lblExplanation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblExplanation.AutoEllipsis = true;
             this.lblExplanation.AutoSize = true;
             this.lblExplanation.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblExplanation.Location = new System.Drawing.Point(567, 0);
+            this.lblExplanation.Location = new System.Drawing.Point(642, 0);
             this.lblExplanation.Name = "lblExplanation";
-            this.lblExplanation.Size = new System.Drawing.Size(184, 77);
+            this.lblExplanation.Size = new System.Drawing.Size(208, 96);
             this.lblExplanation.TabIndex = 3;
-            this.lblExplanation.Text = "label3";
             this.lblExplanation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblEnter
@@ -106,7 +106,7 @@ namespace HW_7._9
             this.lblEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblEnter.Location = new System.Drawing.Point(3, 0);
             this.lblEnter.Name = "lblEnter";
-            this.lblEnter.Size = new System.Drawing.Size(182, 77);
+            this.lblEnter.Size = new System.Drawing.Size(207, 96);
             this.lblEnter.TabIndex = 0;
             this.lblEnter.Text = "Enter key:";
             this.lblEnter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -118,9 +118,9 @@ namespace HW_7._9
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblResult.Location = new System.Drawing.Point(379, 0);
+            this.lblResult.Location = new System.Drawing.Point(429, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(182, 77);
+            this.lblResult.Size = new System.Drawing.Size(207, 96);
             this.lblResult.TabIndex = 1;
             this.lblResult.Text = "Result:";
             this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -129,9 +129,9 @@ namespace HW_7._9
             // 
             this.tbKey.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tbKey.Location = new System.Drawing.Point(191, 19);
+            this.tbKey.Location = new System.Drawing.Point(216, 29);
             this.tbKey.Name = "tbKey";
-            this.tbKey.Size = new System.Drawing.Size(182, 38);
+            this.tbKey.Size = new System.Drawing.Size(207, 38);
             this.tbKey.TabIndex = 2;
             // 
             // tlbLower
@@ -144,13 +144,13 @@ namespace HW_7._9
             this.tlbLower.Controls.Add(this.lblSearched, 0, 1);
             this.tlbLower.Controls.Add(this.btnFind, 0, 0);
             this.tlbLower.Controls.Add(this.lblResultSet, 0, 2);
-            this.tlbLower.Location = new System.Drawing.Point(3, 86);
+            this.tlbLower.Location = new System.Drawing.Point(3, 105);
             this.tlbLower.Name = "tlbLower";
             this.tlbLower.RowCount = 3;
             this.tlbLower.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.66667F));
             this.tlbLower.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tlbLower.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.66667F));
-            this.tlbLower.Size = new System.Drawing.Size(754, 328);
+            this.tlbLower.Size = new System.Drawing.Size(853, 404);
             this.tlbLower.TabIndex = 2;
             // 
             // lblSearched
@@ -160,20 +160,21 @@ namespace HW_7._9
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSearched.AutoSize = true;
             this.lblSearched.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSearched.Location = new System.Drawing.Point(3, 136);
+            this.lblSearched.Location = new System.Drawing.Point(3, 168);
             this.lblSearched.Name = "lblSearched";
-            this.lblSearched.Size = new System.Drawing.Size(748, 54);
+            this.lblSearched.Size = new System.Drawing.Size(847, 67);
             this.lblSearched.TabIndex = 4;
+            this.lblSearched.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // btnFind
             // 
             this.btnFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnFind.Location = new System.Drawing.Point(47, 3);
+            this.btnFind.Location = new System.Drawing.Point(96, 3);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(660, 130);
+            this.btnFind.Size = new System.Drawing.Size(660, 162);
             this.btnFind.TabIndex = 0;
-            this.btnFind.Text = "FİND KEY";
+            this.btnFind.Text = "FIND KEY";
             this.btnFind.UseVisualStyleBackColor = true;
             this.btnFind.Click += new System.EventHandler(this.BtnFind_Click);
             // 
@@ -182,21 +183,23 @@ namespace HW_7._9
             this.lblResultSet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblResultSet.Location = new System.Drawing.Point(3, 193);
+            this.lblResultSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblResultSet.Location = new System.Drawing.Point(3, 238);
             this.lblResultSet.Multiline = true;
             this.lblResultSet.Name = "lblResultSet";
             this.lblResultSet.ReadOnly = true;
             this.lblResultSet.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.lblResultSet.Size = new System.Drawing.Size(748, 132);
+            this.lblResultSet.Size = new System.Drawing.Size(847, 163);
             this.lblResultSet.TabIndex = 5;
             // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 442);
+            this.ClientSize = new System.Drawing.Size(896, 537);
             this.Controls.Add(this.tblGeneral);
             this.Name = "Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.tblGeneral.ResumeLayout(false);
             this.tlpUpper.ResumeLayout(false);
