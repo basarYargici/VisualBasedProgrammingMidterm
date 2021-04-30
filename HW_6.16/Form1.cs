@@ -29,7 +29,8 @@ namespace HW_6._16
 
                 lblGcd.Text = "Greatest Common Divisor : " + Gcd(firstNum, secondNum).ToString();
             }
-            catch(Exception exception) {
+            catch (Exception exception)
+            {
                 lblGcd.Text = exception.Message.ToString();
             }
 
@@ -43,7 +44,7 @@ namespace HW_6._16
         /// <returns>General common divisor</returns>
         private int Gcd(int x, int y)
         {
-            if (y == 0) 
+            if (y == 0)
                 return x;
             else
                 return Gcd(y, x % y);

@@ -17,14 +17,21 @@ namespace HW_5._6
         // main entry point for the application
         static void Main(string[] args)
         {
-            int side1, side2, hypotenuse;
-            int counter = 1;
+            int side1 = 1, side2 = 1, hypotenuse = 1;
             int limit = 30;
 
             String description = "Application that find all Pythagorean triples for side1, side2 and hypotenuse, none larger than 30 \n";
             Console.WriteLine(description.ToUpperInvariant());
 
+            FindPythagoreanTriples(side1, side2, hypotenuse, limit);
 
+            Console.WriteLine("Press any key to close application");
+            Console.ReadKey();
+        }
+
+        private static void FindPythagoreanTriples(int side1, int side2, int hypotenuse, int limit)
+        {
+            int counter = 1;
             // we should try all possibilities to get all Pythagorean triples
             // rules:
             //  - side1 or side2 or hypotenuse can not be bigger than 30
@@ -44,10 +51,6 @@ namespace HW_5._6
                     }
                 }
             }
-
-
-            Console.WriteLine("Press any key to close application");
-            Console.ReadKey();
         }
     }
 }

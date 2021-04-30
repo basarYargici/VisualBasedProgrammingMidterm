@@ -29,7 +29,8 @@ namespace HW_7._9
         private void BtnFind_Click(object sender, EventArgs e)
         {
             int searchKey;
-            try {
+            try
+            {
                 searchKey = Int32.Parse(tbKey.Text);
                 lblResultSet.Text = "";
 
@@ -41,11 +42,12 @@ namespace HW_7._9
                     lblExplanation.Text = "Found value at element " + element;
                 else
                     lblExplanation.Text = "Value not found";
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 lblResultSet.Text = ex.Message.ToUpperInvariant();
             }
-            
+
         }
 
 
@@ -81,7 +83,7 @@ namespace HW_7._9
 
             return -1; // search key not found
 
-        } 
+        }
 
         /// <summary>
         ///     Binary Search method to find given key in given array recursively.
@@ -91,12 +93,12 @@ namespace HW_7._9
         /// <param name="start">first index to start searching in array</param>
         /// <param name="end">last index to end searching in array</param>
         /// <returns></returns>
-        public int BinarySearch(int[] array, int key,int start, int end)
+        public int BinarySearch(int[] array, int key, int start, int end)
         {
             if (end >= start)
             {
                 int mid = start + (end - start) / 2;
-                
+
                 // If the element is present at the
                 // middle itself
                 if (array[mid] == key)
@@ -104,14 +106,14 @@ namespace HW_7._9
                     BuildOutput(a, start, mid, end);
                     return mid;
                 }
-                   
+
 
                 // If element is smaller than mid, then
                 // it can only be present in left subarray
                 if (array[mid] > key)
                 {
                     BuildOutput(a, start, mid, end);
-                    return BinarySearch(array, key, start, mid-1);
+                    return BinarySearch(array, key, start, mid - 1);
 
                 }
 
@@ -121,7 +123,7 @@ namespace HW_7._9
                 return BinarySearch(array, key, mid + 1, end);
             }
 
-                return -1; // search key not found
+            return -1; // search key not found
 
         }
 
@@ -154,6 +156,6 @@ namespace HW_7._9
 
         } // end BuildOutput
 
- 
+
     }
 }
