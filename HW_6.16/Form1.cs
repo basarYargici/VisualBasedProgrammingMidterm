@@ -1,22 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HW_6._16
 {
     public partial class Form1 : Form
     {
+
+        /// <summary>
+        ///     Form initializer
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        ///     This method is listener of btnFind button. Gets two input from tbFirstNum and tbSecondNum textBoxes and
+        ///     finds their general common divisors.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnFind_Click(object sender, EventArgs e)
         {
             try
@@ -32,6 +35,12 @@ namespace HW_6._16
 
         }
 
+        /// <summary>
+        ///     This method takes two integer parameters and finds their general common divisors recursively.
+        /// </summary>
+        /// <param name="x">First integer number</param>
+        /// <param name="y">Second integer number</param>
+        /// <returns>General common divisor</returns>
         private int Gcd(int x, int y)
         {
             if (y == 0) 

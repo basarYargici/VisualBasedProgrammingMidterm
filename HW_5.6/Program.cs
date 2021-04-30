@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /*
  * 5.6 (Pythagorean Triples) A right triangle can have sides that are all integers.
@@ -42,7 +38,7 @@ namespace HW_5._6
                         if (Math.Abs(Math.Pow(side1, 2) + Math.Pow(side2, 2) - Math.Pow(hypotenuse, 2)) < 0.001)
                         {
                             Console.WriteLine(
-                                counter + "  {" + side2 + "," + side1 + "," + hypotenuse + "}");
+                                counter + "\t{" + side2 + "," + side1 + "," + hypotenuse + "}");
                             counter++;
                         }
                     }
