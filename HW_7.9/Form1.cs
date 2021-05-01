@@ -135,8 +135,7 @@ namespace HW_7._9
         /// <param name="low">low subscript</param>
         /// <param name="mid">middle subscript</param>
         /// <param name="high">high subscript</param>
-        public void BuildOutput(
-        int[] array, int low, int mid, int high)
+        public void BuildOutput(int[] array, int low, int mid, int high)
         {
             for (int i = 0; i < array.Length; i++)
             {
@@ -145,11 +144,9 @@ namespace HW_7._9
 
                 // mark middle element in output
                 else if (i == mid)
-                    lblResultSet.Text +=
-                    array[i].ToString("00") + "* ";
+                    lblResultSet.Text += array[i].ToString("00") + "* ";
                 else
-                    lblResultSet.Text +=
-                    array[i].ToString("00") + " ";
+                    lblResultSet.Text += array[i].ToString("00") + " ";
             }
 
             lblResultSet.Text += "\r\n";
