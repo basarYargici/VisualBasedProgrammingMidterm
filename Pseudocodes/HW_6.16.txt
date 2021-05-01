@@ -1,0 +1,5 @@
+HW_6.16 Pseudocode:
+
+- There should be two textBox that user can interact with application and should validated that input is integer.
+- Gcd(int x, int y) method should take those two inputs as parameter and find the greatest common divisor recursively.
+if y==0 ? return x : return Gcd(y,x%y)

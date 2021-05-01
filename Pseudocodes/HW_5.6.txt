@@ -1,0 +1,11 @@
+HW_5.6 Pseudocode:
+
+
+-Pythagorean triples rules:
+-- side1 or side2 or hypotenuse can not be bigger than upper limit 
+-- side1^2 + side2^2 = hypotenuse^2 (from Pythagorean theorem)
+
+
+- We should indicate upper limit of a side can get
+- We should try all possibilities to get all Pythagorean triples in a given range. That can be provided with nested "for"s as author want us. 
+In the last "for" body, we can check Pythagorean theorem and decide if sides provide the rules.

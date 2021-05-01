@@ -1,0 +1,14 @@
+HW_7.9 Pseudocode:
+
+
+- User should enter a key to textBox to search in array
+- If user clicks to the button, binary search algorithm should be called to find key on given array.
+
+- In BinarySearch(int[] array, int key, int start, int end) method:
+-- first we should check that end index is bigger than start index. If bigger, return -1 which means search key not found, otherwise continue.
+--- If the element is present at the middle itself we should return the middle number
+--- If element is smaller than mid, then it can only be present in left subarray (which means end <- mid -1), we should return BinarySearch(array, key, start, mid - 1)
+--- Else the element can only be present in right subarray (which means start <- mid +1), we should return BinarySearch(array, key, mid + 1, end)
+
+- If key is found, it should be shown in the screen, otherwise print that search key not found
+

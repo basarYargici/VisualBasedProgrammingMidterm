@@ -1,0 +1,8 @@
+HW_6.13 Pseudocode:
+
+- There should be two images which are head and tail of coin.
+- There should be random instance in Flip() method and it should generate two different values (1 and 2), 
+assuming 1 is head and 2 is tail. Flip will return true if result is 1(head).
+- If user clicks toss button, pictureBox content should be set according to result of Flip() method.
+- According to result of Flip() method, head count or tail count should be increased by 1.
+

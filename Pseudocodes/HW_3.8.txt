@@ -1,0 +1,7 @@
+HW_3.8 Pseudocode:
+
+- Two inputs should be get from UI and should be validated that inputs are integer
+- Sum <- firstNumber + SecondNumber
+- Difference <- firstNumber - SecondNumber
+- Product <- firstNumber * SecondNumber 
+- Division <- if secondNumber == 0 ? Throw new Exception(DivideByZero) : firstNumber / (float)SecondNumber
