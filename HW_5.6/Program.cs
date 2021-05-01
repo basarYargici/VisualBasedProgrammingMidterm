@@ -20,7 +20,7 @@ namespace HW_5._6
             int side1 = 1, side2 = 1, hypotenuse = 1;
             int limit = 30;
 
-            String description = "Application that find all Pythagorean triples for side1, side2 and hypotenuse, none larger than 30 \n";
+            String description = "Application that find all Pythagorean triples for side1, side2 and hypotenuse, none larger than " + limit + " \n";
             Console.WriteLine(description.ToUpperInvariant());
 
             FindPythagoreanTriples(side1, side2, hypotenuse, limit);
